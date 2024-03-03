@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/PK-react-webshop/static/css/main.743ae0b8.css",
+    "main.js": "/PK-react-webshop/static/js/main.32b11237.js",
+    "static/media/banner-3.jpeg": "/PK-react-webshop/static/media/banner-3.4fe3c629dc0f42150c9f.jpeg",
+    "static/media/banner-2.jpeg": "/PK-react-webshop/static/media/banner-2.8d2b2a9d418d7e86b2f2.jpeg",
+    "static/media/banner-1.jpeg": "/PK-react-webshop/static/media/banner-1.f304a3d6a406af725a98.jpeg",
+    "index.html": "/PK-react-webshop/index.html",
+    "main.743ae0b8.css.map": "/PK-react-webshop/static/css/main.743ae0b8.css.map",
+    "main.32b11237.js.map": "/PK-react-webshop/static/js/main.32b11237.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.743ae0b8.css",
+    "static/js/main.32b11237.js"
+  ]
+}
