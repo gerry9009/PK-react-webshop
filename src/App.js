@@ -10,11 +10,11 @@ const product1 = { title: "Iphone X", price: 600, stock: 2 };
 const product2 = { title: "Xiaomi", price: 400, stock: 7 };
 
 function App() {
-  function Card(props) {
+  function CardBody(props) {
     const { name, price, stock } = props;
 
     return (
-      <div className="card">
+      <>
         <div className="card-title">
           <h2>{name}</h2>
         </div>
@@ -23,24 +23,43 @@ function App() {
           <p>{stock} darab van készleten</p>
           <button>Kosárhoz</button>
         </div>
-      </div>
+      </>
     );
+  }
+
+  function Card(props) {
+    const { children } = props;
+
+    return <div className="card">{children}</div>;
   }
 
   return (
     <div className="App">
       <h1>PK Webshop</h1>
-      <Card name={product.title} price={product.price} stock={product.stock} />
-      <Card
-        name={product1.title}
-        price={product1.price}
-        stock={product1.stock}
-      />
-      <Card
-        name={product2.title}
-        price={product2.price}
-        stock={product2.stock}
-      />
+      <Card>
+        <CardBody
+          name={product.title}
+          price={product.price}
+          stock={product.stock}
+        />
+      </Card>
+      <Card>
+        <CardBody
+          name={product1.title}
+          price={product1.price}
+          stock={product1.stock}
+        />
+      </Card>
+      <Card>
+        <CardBody
+          name={product2.title}
+          price={product2.price}
+          stock={product2.stock}
+        />
+      </Card>
+      <Card>
+        <h2>Ez már más tartalom</h2>
+      </Card>
     </div>
   );
 }
