@@ -2,13 +2,13 @@ import { useState } from "react";
 import Button from "./button";
 
 export default function Card(props) {
-  const { name, price, stock, addProduct } = props;
+  const { title, price, stock, addProduct } = props;
 
   const [myStock, setMyStock] = useState(stock);
   const [inCart, setInCart] = useState(0);
 
   const handleClickAdd = () => {
-    addProduct(name);
+    addProduct(title);
     if (myStock > 0) {
       setMyStock((currentStock) => currentStock - 1);
       setInCart((currentStock) => currentStock + 1);
@@ -31,7 +31,7 @@ export default function Card(props) {
   return (
     <div className="card">
       <div className="card-title">
-        <h2>{name}</h2>
+        <h2>{title}</h2>
       </div>
       <div className="card-body">
         <p>{price} $</p>

@@ -24,24 +24,9 @@ function App() {
     <div className="App">
       <h1>PK Webshop</h1>
       <h2>{selectedProduct}</h2>
-      <Card
-        name={product.title}
-        price={product.price}
-        stock={product.stock}
-        addProduct={handleOnClick}
-      />
-      <Card
-        name={product1.title}
-        price={product1.price}
-        stock={product1.stock}
-        addProduct={handleOnClick}
-      />
-      <Card
-        name={product2.title}
-        price={product2.price}
-        stock={product2.stock}
-        addProduct={handleOnClick}
-      />
+      <Card {...product} addProduct={handleOnClick} />
+      <Card {...product1} addProduct={handleOnClick} />
+      <Card {...product2} addProduct={handleOnClick} />
     </div>
   );
 }
