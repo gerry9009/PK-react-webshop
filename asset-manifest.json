@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/PK-react-webshop/static/css/main.6dc01478.css",
-    "main.js": "/PK-react-webshop/static/js/main.3c52f928.js",
+    "main.js": "/PK-react-webshop/static/js/main.90b66b1f.js",
     "static/media/banner-3.jpeg": "/PK-react-webshop/static/media/banner-3.4fe3c629dc0f42150c9f.jpeg",
     "static/media/banner-2.jpeg": "/PK-react-webshop/static/media/banner-2.8d2b2a9d418d7e86b2f2.jpeg",
     "static/media/banner-1.jpeg": "/PK-react-webshop/static/media/banner-1.f304a3d6a406af725a98.jpeg",
     "index.html": "/PK-react-webshop/index.html",
     "main.6dc01478.css.map": "/PK-react-webshop/static/css/main.6dc01478.css.map",
-    "main.3c52f928.js.map": "/PK-react-webshop/static/js/main.3c52f928.js.map"
+    "main.90b66b1f.js.map": "/PK-react-webshop/static/js/main.90b66b1f.js.map"
   },
   "entrypoints": [
     "static/css/main.6dc01478.css",
-    "static/js/main.3c52f928.js"
+    "static/js/main.90b66b1f.js"
   ]
 }
