@@ -1,30 +1,18 @@
-import { useState } from "react";
 import Button from "./button";
 
 export default function Card(props) {
-  const { title, price, stock, addProduct } = props;
+  const {
+    id,
+    title,
+    price,
+    stock,
+    inCart,
+    handleAddToCart,
+    handleRemoveFromCart,
+  } = props;
 
-  const [myStock, setMyStock] = useState(stock);
-  const [inCart, setInCart] = useState(0);
-
-  const handleClickAdd = () => {
-    addProduct(title);
-    if (myStock > 0) {
-      setMyStock((currentStock) => currentStock - 1);
-      setInCart((currentStock) => currentStock + 1);
-    }
-  };
-
-  const handleClickRemove = () => {
-    if (inCart > 0) {
-      setMyStock((currentStock) => currentStock + 1);
-      setInCart((currentStock) => currentStock - 1);
-    }
-  };
-
-  let stockMessage = <p>{myStock} darab van készleten</p>;
-
-  if (myStock === 0) {
+  let stockMessage = <p>{stock} darab van készleten</p>;
+  if (stock === 0) {
     stockMessage = <p>Nincs készleten</p>;
   }
 
@@ -38,14 +26,14 @@ export default function Card(props) {
         {stockMessage}
         <ul>
           <Button
-            onClick={handleClickAdd}
-            isLast={myStock === 1}
-            isntActive={myStock === 0}
+            onClick={() => handleAddToCart(id)}
+            isLast={stock === 1}
+            isntActive={stock === 0}
           >
             Hozzáad a kosárhoz
           </Button>
           {inCart > 0 && (
-            <Button onClick={handleClickRemove} color="red">
+            <Button onClick={() => handleRemoveFromCart(id)} color="red">
               Kivenni a kosárból
             </Button>
           )}
